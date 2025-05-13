@@ -6,7 +6,6 @@
   "framework": "nextjs",
   "regions": ["fra1"],
   "env": {
-    "NEXTAUTH_URL": "https://${VERCEL_URL}",
-    "NEXTAUTH_SECRET": "@nextauth_secret"
+    "NEXTAUTH_URL": "https://${VERCEL_URL}"
   }
 } 
