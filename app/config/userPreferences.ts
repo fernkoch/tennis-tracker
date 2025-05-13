@@ -30,9 +30,26 @@ export function toggleFavoritePlayer(playerId: string): void {
   localStorage.setItem('favoritePlayerIds', JSON.stringify(favorites));
 }
 
+export interface NotificationPreferences {
+  pushoverKey?: string;
+  matchStartReminders: boolean;
+  dailySchedule: boolean;
+  favoritePlayersOnly: boolean;
+  reminderTime: number;
+  dailyScheduleTime: string;
+}
+
+// Default preferences
+export const defaultPreferences: NotificationPreferences = {
+  matchStartReminders: true,
+  dailySchedule: true,
+  favoritePlayersOnly: true,
+  reminderTime: 15,
+  dailyScheduleTime: '08:00'
+};
+
 export const notificationSettings = {
-  // Add any additional notification settings here
   highPriorityForFavorites: true,
   quietHoursStart: '23:00',
-  quietHoursEnd: '07:00',
+  quietHoursEnd: '07:00'
 }; 

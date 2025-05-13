@@ -43,11 +43,8 @@ next-env.d.ts
 
 # OS
 Thumbs.db
-.DS_Store
 
 # Data files
 /data/*.json
-
-# data files
 /data/notifications.json
 /data/userPreferences.json 
