@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 17, 24, 39; /* gray-900 */
+  --background-rgb: 255, 255, 255;
+}
+
+.dark {
+  --foreground-rgb: 249, 250, 251; /* gray-50 */
+  --background-rgb: 17, 24, 39; /* gray-900 */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode overrides */
+.dark body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: rgb(31, 41, 55); /* gray-800 */
+  border-color: rgb(75, 85, 99); /* gray-600 */
+  color: rgb(249, 250, 251); /* gray-50 */
+}
+
+.dark input::placeholder,
+.dark select::placeholder,
+.dark textarea::placeholder {
+  color: rgb(156, 163, 175); /* gray-400 */
+}
+
+.dark button {
+  background-color: rgb(31, 41, 55); /* gray-800 */
+  color: rgb(249, 250, 251); /* gray-50 */
+}
+
+.dark button:hover {
+  background-color: rgb(55, 65, 81); /* gray-700 */
+} 

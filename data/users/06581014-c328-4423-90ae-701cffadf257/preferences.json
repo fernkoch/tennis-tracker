@@ -1,0 +1,53 @@
+{
+  "userId": "06581014-c328-4423-90ae-701cffadf257",
+  "username": "fernkoch",
+  "email": "nandokoch@gmail.com",
+  "hasPassword": false,
+  "notificationType": "email",
+  "pushoverKey": "",
+  "matchStartReminders": true,
+  "dailySchedule": true,
+  "favoritePlayersOnly": true,
+  "reminderTime": 15,
+  "dailyScheduleTime": "08:00",
+  "favoritePlayerIds": [],
+  "notificationTypes": {
+    "match_start": {
+      "enabled": true,
+      "priority": 1
+    },
+    "match_end": {
+      "enabled": true,
+      "priority": 0
+    },
+    "set_start": {
+      "enabled": false,
+      "priority": 0
+    },
+    "set_end": {
+      "enabled": true,
+      "priority": 0
+    },
+    "tiebreak": {
+      "enabled": true,
+      "priority": 1
+    },
+    "break_point": {
+      "enabled": true,
+      "priority": 1
+    },
+    "match_point": {
+      "enabled": true,
+      "priority": 1
+    },
+    "score_update": {
+      "enabled": false,
+      "priority": 0
+    }
+  },
+  "quietHours": {
+    "enabled": true,
+    "start": "23:00",
+    "end": "07:00"
+  }
+}
